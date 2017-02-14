@@ -1,5 +1,0 @@
-commit be7a39cfc68169e26a593314708cc2e
-Author: Elizaveta <ms.boduak@mail.ru>
-Date:   Sat Feb 11 16:22:16 2017 +0300
-
-    add.gitignore
