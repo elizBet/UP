@@ -1,0 +1,104 @@
+body{
+    background : white;
+}
+form.SearchCl {
+    position: absolute;
+    letter-spacing: 12px;
+    font-size: 15px;
+    left: 1%;
+    top: 35px;
+    padding: 8px 20px;
+}
+
+button.EnterBt {
+    background-color: beige;
+    border-color: cornsilk;
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 18%;
+    top: 35px;
+}
+
+button.ExitBt {
+    background-color: beige;
+    color: black;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-color: cornsilk;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 1%;
+    top: 35px
+}
+
+img.Logo {
+    position: absolute;
+    left: 5%;
+    top: 105px;
+}
+
+div.Topics{
+    letter-spacing:5px;
+    font-size:25px;
+    position:absolute;
+    left:30%;
+    top:280px;
+}
+
+button.AddBt{
+    font-size: 20px;
+    position:absolute;
+    background-color: beige;
+    border-color: cornsilk;
+    color: black;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    left: 1%;
+    top: 280px
+}
+div.Filters{
+    position: absolute;
+    letter-spacing: 12px;
+    font-size: 20px;
+    left: 1%;
+    top: 450px;
+
+}
+div.ForTags{
+    position:absolute;
+    left:1%;
+    top:820px;
+    text-align: center;
+    font-size: 20px;
+}
+div.News{
+    margin-left:350px ;
+    position:absolute;
+    top:550px;
+    width:350px;
+    height:150px;
+    border:3px solid sandybrown;
+    font-size:120%;"
+}
+
+footer{
+    position: absolute;
+    right: 50px;
+    text-align: right;
+    bottom: 10px;
+    top:1200px;
+    height: 80px;
+    font-size: 17px;
+}
+
+
