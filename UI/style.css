@@ -46,7 +46,7 @@ img.Logo {
 
 div.Topics{
     letter-spacing:5px;
-    font-size:25px;
+    font-size:30px;
     position:absolute;
     left:30%;
     top:280px;
@@ -72,31 +72,175 @@ div.Filters{
     font-size: 20px;
     left: 1%;
     top: 450px;
+    border: sandybrown;
 
 }
 div.ForTags{
     position:absolute;
-    left:1%;
-    top:820px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
+    margin-left:1%;
+    position:absolute;
+    top:820px;
+    width:100px;
+    height:200px;
+    border:2px solid sandybrown;
+    font-size:120%;
+    text-align: center;
 }
-div.News{
+.News1{
     margin-left:350px ;
     position:absolute;
-    top:550px;
-    width:350px;
-    height:150px;
-    border:3px solid sandybrown;
-    font-size:120%;"
+    top:500px;
+    width:400px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
 }
+.News2{
+    margin-left:800px ;
+    position:absolute;
+    top:500px;
+    width:400px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News3{
+    margin-left:350px ;
+    position:absolute;
+    top:750px;
+    width:400px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News4{
+    margin-left:800px ;
+    position:absolute;
+    top:750px;
+    width:400px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News5{
+     margin-left:350px ;
+     position:absolute;
+     top:1000px;
+     width:400px;
+     height:200px;
+     border:2px solid beige;
+     font-size:120%;
+     text-align: center;
+ }
+.News6{
+    margin-left:800px ;
+    position:absolute;
+    top:1000px;
+    width:400px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News7{
+    margin-left:350px ;
+    position:absolute;
+    top:1250px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News8{
+    margin-left:650px ;
+    position:absolute;
+    top:1250px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News9{
+    margin-left:950px ;
+    position:absolute;
+    top:1250px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News10{
+    margin-left:350px ;
+    position:absolute;
+    top:1500px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News11{
+    margin-left:650px ;
+    position:absolute;
+    top:1500px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.News12{
+    margin-left:950px ;
+    position:absolute;
+    top:1500px;
+    width:250px;
+    height:200px;
+    border:2px solid beige;
+    font-size:120%;
+    text-align: center;
+}
+.TitleNews {
+    font-size: 20px;
+    font-weight: bold;
+}
+.SmNews,.OpenNews{
+    font-size: 15px;
+}
+.DeleteBt,.ChangeBt{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 2px 15px;
+    font-weight: bold;
+}
+div.NumberBt{
+    position: absolute;
+    top:1750px;
+    left:720px;
+}
+.bt{
+    background-color: beige;
+    border-bottom-color: white ;
+    color: black;
+    padding: 2px 5px;
+    font-size: 18px;
 
+}
 footer{
     position: absolute;
     right: 50px;
     text-align: right;
     bottom: 10px;
-    top:1200px;
+    top:2000px;
     height: 80px;
     font-size: 17px;
 }
