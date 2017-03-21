@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title>Main page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all and (min-width: 1279px)">
+    <link rel="stylesheet" type="text/css" href="style2.css" media="all and (max-width: 1278px)">
+    <script src = "script.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+
+    <button class = "EnterBt">
+        Вход/Имя пользователя
+    </button>
+    <button class = "ExitBt">
+        Выход/Авторизация
+    </button>
+    <img class="Logo" src="321.jpg"  alt="Логотип" >
+</header>
+<form>
+    <input type="text" class="txtSearch" >
+    <button class="btSearch">Поиск</button>
+</form>
+<button class="AddBt">
+    Добавить новость
+</button>
+<div  class="Filters">
+    <h3 style="font-family: Cambria;color: darkblue ;font-size:20px">Фильтры</h3>
+    <br>
+    <form>
+        <select  class  = "Filter-Data" name="">
+            <option title="data">Дата</option>
+            <option value="y14">2014</option>
+            <option value="y15">2015</option>
+            <option value="y16">2016</option>
+            <option value="y17">2017</option>
+        </select>
+    </form>
+    <br>
+    <form>
+        <select  class = "Filter-Name" name="">
+            <option title="Name">Имя</option>
+            <option value="Ivan">Иван</option>
+            <option value="Olga">Ольга</option>
+            <option value="Arkadii">Аркадий</option>
+            <option value="Viktoria">Виктория</option>
+        </select>
+    </form>
+    <br>
+    <form>
+        <select class = "Filter-Tag" name="">
+            <option title="Tegs">Теги</option>
+            <option value="Sport">Спорт</option>
+            <option value="Art">Искусство</option>
+            <option value="Music">Музыка</option>
+        </select>
+    </form><br>
+    <button class = "ButtonOk">ОК</button>
+</div>
+<div class = "ForTags">
+    Основные теги:
+    <br>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег1 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег2 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег3 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег4 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег5 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег6 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег7 </a>
+    <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег8 </a>
+</div>
+<div class ="Title-Background1" ><br>
+    <h9 class = "TitleNews">Людям предлагают сдавать кровь в ожоговый центр</h9><br>
+    <h9 >09.09.1023</h9><br>
+    <h9>Джек</h9>
+    <br><br>
+    <a class = "tag" href = "" target = "_blank"> тег1 </a>
+    <a class = "tag" href = "" target = "_blank"> тег2 </a>
+</div>
+<div class = "News1">
+    <p class = "SmNews">Состояние женщин, пострадавших во время взрыва на сахарном комбинате
+    в Скиделе, тяжелое, рассказал Дмитрий Мазолевский,
+    заведующий ожоговым отделением больницы скорой медицинской помощи.</p>
+    <a  class="OpenNews1" target="_blank" href = "https://news.tut.by/society/533220.html?utm_source=news-right-block&utm_medium=popular-news&utm_campaign=popular-news">Открыть новость</a>
+    <button class="ChangeBt">Редактировать </button>
+    <button class="DeleteBt">Удалить </button>
+</div>
+
+<div class = "Title-Background2"><br>
+    <h9 class = "TitleNews">До 50%. Где минчанам искать скидки в марте</h9><br>
+    <h9>08.10.1092</h9><br>
+    <h9>Джон</h9>
+    <br><br>
+    <a class = "tag" href = "" target = "_blank"> тег1 </a>
+    <a class = "tag" href = "" target = "_blank"> тег2 </a>
+</div>
+<div class = "News2">
+    <p class = "SmNews">Столичные универмаги и торговые сети в марте продолжат делать скидки. </p>
+    <a class="OpenNews2" href = "https://finance.tut.by/news533292.html" target="_blank" >Открыть новость</a><br>
+    <button class="ChangeBt">Редактировать </button>
+    <button class="DeleteBt">Удалить </button>
+</div>
+<div class = "Title-Background3">
+    <br><h9 class = "TitleNews">В Киеве обрушился мост на Шулявском путепроводе</h9><br>
+    <h9>08.10.1092</h9><br>
+    <h9>Джон</h9>
+    <br><br>
+    <a class = "tag" href = "" target = "_blank"> тег1 </a>
+    <a class = "tag" href = "" target = "_blank"> тег2 </a>
+</div>
+<div class = "News3">
+    <p class = "SmNews">Движение транспорта на Шулявском путепроводе перекрыто.</p>
+    <a href = "https://news.tut.by/accidents/533320.html" target="_blank" class="OpenNews1">Открыть новость</a><br>
+    <button class="ChangeBt">Редактировать </button>
+    <button class="DeleteBt">Удалить </button>
+</div>
+<div class="NumberBt">
+    <button class="bt">1</button>
+    <button class="bt">2</button>
+    <a>...</a>
+    <button class="bt">n-1</button>
+    <button class="bt">n</button>
+</div>
+<footer>
+    <script src = "inf.js"></script>
+    NEWSby:Бодяк Елизавета (2 курс, 7 группа)<br>
+    ms.bodyak@mail.ru<br>
+    27.02.2017
+</footer>
+</body>
+</html>

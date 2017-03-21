@@ -12,7 +12,7 @@ body{
     display: inline-block;
     font-size: 16px;
     position: absolute;
-    right: 18%;
+    right: 25%;
     top: 60px;
     border-radius: 30px;
 }
@@ -40,13 +40,13 @@ body{
 
 .txtSearch{
     position: absolute;
-    width: 850px;
+    width: 600px;
     right: 11%;
     top:200px;
     background: beige;
     border-color: blue;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .btSearch{
@@ -57,21 +57,21 @@ body{
     border-color: darkblue;
     border-radius: 30px;
     color: white;
-    padding: 5px 30px;
+    padding: 5px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .AddBt{
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 15px;
     position:absolute;
     background-color: orange;
     border-color: darkblue;
     color: white;
-    padding: 8px 18px;
+    padding: 8px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -81,7 +81,7 @@ body{
 
 .Filters{
     position: absolute;
-    left: 7%;
+    left: 2%;
     top: 320px;
 
 }
@@ -91,7 +91,7 @@ body{
     background: beige;
     border-color: rgb(255,165,0);
     height: 30px;
-    width: 150px;
+    width: 120px;
     font-size: 15px;
     border-radius: 30px;
 }
@@ -113,9 +113,9 @@ body{
     font-size: 18px;
     margin-left:1%;
     top:650px;
-    width:170px;
+    width:150px;
     height:300px;
-    left: 5%;
+    left: 1%;
     border:2px solid rgb(255,255,255);
     color: darkblue;
 }
@@ -204,22 +204,22 @@ body{
 .Title-Background1{
     border:solid rgba(0,0,139,0.4);
     background: rgba(0,0,139,0.8);
-    left:400px;
+    left:200px;
     top:350px;
-    width:350px;
+    width:330px;
     height:250px;
     position: absolute;
     text-align: center;
-    color:white;
+    color:;
 }
 
 .News1{
     position: absolute;
     border:solid darkblue;
     background: white;
-    left:750px;
+    left:530px;
     top:350px;
-    width:500px;
+    width:480px;
     height:250px;
     white-space: pre-line;
     text-align: left;
@@ -229,9 +229,9 @@ body{
 .Title-Background2{
     border:solid rgba(0,0,139,0.4);
     background: rgba(0,0,139,0.8);
-    left:900px;
+    left:680px;
     top:650px;
-    width:350px;
+    width:330px;
     height:250px;
     position: absolute;
     text-align: center;
@@ -242,9 +242,9 @@ body{
     position: absolute;
     border:solid darkblue;
     background: white;
-    left:400px;
+    left:200px;
     top:650px;
-    width:500px;
+    width:480px;
     height:250px;
     white-space: pre-line;
     text-align: left;
@@ -254,9 +254,9 @@ body{
 .Title-Background3{
     border:solid rgba(0,0,139,0.4);
     background: rgba(0,0,139,0.8);
-    left:400px;
+    left:200px;
     top:950px;
-    width:350px;
+    width:330px;
     height:250px;
     position: absolute;
     text-align: center;
@@ -267,9 +267,9 @@ body{
     position: absolute;
     border:solid darkblue;
     background: white;
-    left:750px;
+    left:530px;
     top:950px;
-    width:500px;
+    width:480px;
     height:250px;
     white-space: pre-line;
     text-align: left;
@@ -278,7 +278,7 @@ body{
 .NumberBt{
     position: absolute;
     top:1250px;
-    left:720px;
+    left:520px;
 }
 
 .bt{
@@ -301,5 +301,3 @@ footer{
     font-size: 17px;
     color:darkblue;
 }
-
-
