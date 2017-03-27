@@ -230,7 +230,6 @@ var articleNewId = {
     content:'Сообщается, что подозреваемая, 33-летняя Екатерина, держала сервис по оказанию услуг интимного характера в крупнейших отелях столицы Турции. Правоохранительные органы выяснили, что она регулярно, вплоть до декабря 2016 года, разговаривала по телефону с Мевлютом Алтынташем, убийцей Андрея Карлова.',
     tags:['Россия']
 }
-
 var tags = ["Россия","Нью-Йоркер","масленица","ЖД","ПВТ","Брест","весна","пиво","германия","оскар","конфуз",
     "ужастик","кино","граффити","одежда","Минск","авария","пробки","дождь","Минск","Трамп","США",
     "благотворительность","Ирландия","похороненный заживо","Израиль","марихуана","закон","facebook",
@@ -300,21 +299,6 @@ function checkTags(_tags, tags) {
     return true;
 }
 
-function checkArticle(article) {
-    if (
-        typeof article.id === "string" && article.id.length > 0 && getArticle(article.id) === undefined &&
-        typeof article.title === "string" && article.title.length > 0 && article.title.length < 100 &&
-        typeof article.summary === "string" && article.summary.length > 0 && article.summary.length < 200 &&
-        article.createdAt instanceof(Date) &&
-        typeof article.author === "string" && article.author.length > 0 &&
-        typeof article.content === "string" && article.content.length > 0 &&
-        article.tags !== undefined && article.tags.length > 0 && checkTags(article.tags, tags)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 function addArticle(article, tags) {
     if (!checkArticle(article, tags)) {
         return false;
@@ -339,7 +323,7 @@ function changeArticle(id, article) {
         _article.tags = article.tags;
     }
 
-    if (checkArticle2(_article)) {
+    if (checkArticle(_article)) {
         article.title = _article.title;
         article.summary = _article.summary;
         article.content = _article.content;
@@ -350,9 +334,10 @@ function changeArticle(id, article) {
     }
 }
 
-function checkArticle2(article) {
+
+function checkArticle(article) {
     if (
-        typeof article.id === "string" && article.id.length > 0 &&
+        typeof article.id === "string" && article.id.length > 0 && getArticle(article.id) === undefined &&
         typeof article.title === "string" && article.title.length > 0 && article.title.length < 100 &&
         typeof article.summary === "string" && article.summary.length > 0 && article.summary.length < 200 &&
         article.createdAt instanceof(Date) &&
