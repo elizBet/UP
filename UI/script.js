@@ -1,6 +1,7 @@
+"use strict";
 var articles = [
     {
-        id: '1',
+        id: "1",
         title: 'Медведь проснулся!',
         summary: 'Он очнулся после зимней спячки. Это означает, что пришла настоящая весна',
         createdAt: new Date('2018-02-27T23:00:00'),
@@ -194,46 +195,11 @@ var articles = [
         tags:['Нью-Йоркер']
     }
 ];
-var articleNew = {
-        id:'20',
-        title:'Арестована связанная с убийством посла Карлова россиянка',
-        summary:'Турецкие СМИ сообщили об аресте женщины с российским гражданством в рамках расследования резонансного убийства посла РФ Андрея Карлова.',
-        createdAt: new Date('2016-03-27T11:00:00'),
-        author:'Евгений',
-        content:'Сообщается, что подозреваемая, 33-летняя Екатерина, держала сервис по оказанию услуг интимного характера в крупнейших отелях столицы Турции. Правоохранительные органы выяснили, что она регулярно, вплоть до декабря 2016 года, разговаривала по телефону с Мевлютом Алтынташем, убийцей Андрея Карлова.',
-        tags:['Россия']
-}
-var articleNewTag = {
-    id:'21',
-    title:'Арестована связанная с убийством посла Карлова россиянка',
-    summary:'Турецкие СМИ сообщили об аресте женщины с российским гражданством в рамках расследования резонансного убийства посла РФ Андрея Карлова.',
-    createdAt: new Date('2016-03-27T11:00:00'),
-    author:'Евгений',
-    content:'Сообщается, что подозреваемая, 33-летняя Екатерина, держала сервис по оказанию услуг интимного характера в крупнейших отелях столицы Турции. Правоохранительные органы выяснили, что она регулярно, вплоть до декабря 2016 года, разговаривала по телефону с Мевлютом Алтынташем, убийцей Андрея Карлова.',
-    tags:['дом']
-}
-var articleNewDate = {
-    id:'22',
-    title:'Арестована связанная с убийством посла Карлова россиянка',
-    summary:'Турецкие СМИ сообщили об аресте женщины с российским гражданством в рамках расследования резонансного убийства посла РФ Андрея Карлова.',
-    createdAt: new Date(''),
-    author:'Евгений',
-    content:'Сообщается, что подозреваемая, 33-летняя Екатерина, держала сервис по оказанию услуг интимного характера в крупнейших отелях столицы Турции. Правоохранительные органы выяснили, что она регулярно, вплоть до декабря 2016 года, разговаривала по телефону с Мевлютом Алтынташем, убийцей Андрея Карлова.',
-    tags:['Россия']
-}
-var articleNewId = {
-    id:'2',
-    title:'Арестована связанная с убийством посла Карлова россиянка',
-    summary:'Турецкие СМИ сообщили об аресте женщины с российским гражданством в рамках расследования резонансного убийства посла РФ Андрея Карлова.',
-    createdAt: new Date('2016-03-27T11:00:00'),
-    author:'Евгений',
-    content:'Сообщается, что подозреваемая, 33-летняя Екатерина, держала сервис по оказанию услуг интимного характера в крупнейших отелях столицы Турции. Правоохранительные органы выяснили, что она регулярно, вплоть до декабря 2016 года, разговаривала по телефону с Мевлютом Алтынташем, убийцей Андрея Карлова.',
-    tags:['Россия']
-}
 var tags = ["Россия","Нью-Йоркер","масленица","ЖД","ПВТ","Брест","весна","пиво","германия","оскар","конфуз",
     "ужастик","кино","граффити","одежда","Минск","авария","пробки","дождь","Минск","Трамп","США",
     "благотворительность","Ирландия","похороненный заживо","Израиль","марихуана","закон","facebook",
     "социальные сети","суицид","пилот","самолет","стюардессы","медведь","зима","весна"]
+var baseFunctions = (function() {
 
 function getArticles(skip, top, filterConfiguration) {
     skip = skip || 0;
@@ -334,7 +300,6 @@ function changeArticle(id, article) {
     }
 }
 
-
 function checkArticle(article) {
     if (
         typeof article.id === "string" && article.id.length > 0 && getArticle(article.id) === undefined &&
@@ -392,34 +357,61 @@ function getArticle(id) {
         return article.id === id;
     });
 }
-console.log("Все статьи")
-console.log(getArticles());
-console.log("Статья с индексом 2")
-console.log(getArticle("2"));
-console.log("Статьи с 1-10")
-console.log(getArticles(0,10));
-console.log("Выбрать все где автор Ольга")
-console.log(getArticles(0,20,{author : "Ольга"}));
-console.log("Выбрать все c 2000-02-05T00:00:00 до 2016-02-05T00:00:00")
-console.log(getArticles(0,20,{dateFrom : new Date("2000-02-05T00:00:00"),dateTo : new Date("2017-02-05T00:00:00")}));
-console.log("Получение статей c тегом ЖД");
-console.log(getArticles(0, 3, {   tags: ["ЖД"]}));
-console.log("Удаление статьи с id 1");
-console.log(removeArticle("1"));
-console.log("Все статьи")
-console.log(getArticles());
-console.log("Добавление статьи");
-console.log(addArticle(articleNew));
-console.log("Все статьи")
-console.log(getArticles());
-console.log("в статье с индексом 2 изменяется заголовок");
-changeArticle("2", {title: "обо всем"});
-console.log(getArticle("2"));
-console.log("статья с некорректным тегом");
-console.log(addArticle(articleNewTag));
-console.log("статья с некорректной датой");
-console.log(addArticle(articleNewId));
-console.log("статья с существующим id");
-console.log(addArticle(articleNewDate));
-console.log("В массивов тегов добавляем новый тег")
-console.log(addTag("рим"))
+
+})();
+var forDomFunctions = (function() {
+    var ARTICLE_TEMPLATE;
+    var ARTICLE_LIST;
+    function init() {
+        ARTICLE_TEMPLATE = document.querySelector("#templateArticle");
+        ARTICLE_LIST = document.querySelector(".posts");
+    }
+    function createArticle(article) {
+        var template = ARTICLE_TEMPLATE;
+        template.content.querySelector(".TitleNews").textContent = article.title;
+        template.content.querySelector(".Date").textContent = article.createdAt;
+        template.content.querySelector(".SmNews").textContent = article.content;
+        template.content.querySelector(".Author").textContent = article.author;
+        var tags = template.content.querySelector(".Tags-in-News");
+        tags.innerHTML = "";
+        article.tags.forEach(function (tag) {
+            var temp = document.createElement("p");
+            temp.innerHTML = "<p>" + tag + "</p>";
+            tags.appendChild(temp);
+        });
+        return template.content.querySelector(".News").cloneNode(true);
+    }
+    function createArticles(articles) {
+        return articles.map(function (article) {
+            return createArticle(article);
+        });
+    }
+    function addArticlesToDOM(articles) {
+        var articlesNodes = renderArticles(articles);
+        articlesNodes.forEach(function (node) {
+            ARTICLE_LIST.appendChild(node);
+        });
+    }
+
+    function deleteArticlesFromDOM() {
+        ARTICLE_LIST.innerHTML = "";
+    }
+    return {
+        init: init,
+        addArticlesToDOM: addArticlesToDOM,
+        deleteArticlesFromDOM: deleteArticlesFromDOM
+    };
+})();
+
+function renderArticles() {
+    forDomFunctions.deleteArticlesFromDOM();
+    var articles = baseFunctions.getArticles(0, 20);
+    forDomFunctions.addArticlesToDOM(articles);
+}
+
+function startApp() {
+    forDomFunctions.init();
+    renderArticles();
+}
+
+document.addEventListener('DOMContentLoaded', startApp);
