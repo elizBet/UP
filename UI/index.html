@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
@@ -27,14 +28,9 @@
 <div  class="Filters">
     <h3 style="font-family: Cambria;color: darkblue ;font-size:20px">Фильтры</h3>
     <br>
-    <form>
-        <select  class  = "Filter-Data" name="">
-            <option title="data">Дата</option>
-            <option value="y14">2014</option>
-            <option value="y15">2015</option>
-            <option value="y16">2016</option>
-            <option value="y17">2017</option>
-        </select>
+    <form class="Filter-Date">
+            <input title="data" type="date" class="ForDates" > </input><br><br>
+            <input title="data" type="date" class="ForDates"> </input>
     </form>
     <br>
     <form>
@@ -69,57 +65,38 @@
     <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег7 </a>
     <a href = "https://www.nytimes.com/?WT.z_jog=1&hF=t&vS=undefined" target = "_blank"> тег8 </a>
 </div>
-<div class ="Title-Background1" ><br>
-    <h9 class = "TitleNews">Людям предлагают сдавать кровь в ожоговый центр</h9><br>
-    <h9 >09.09.1023</h9><br>
-    <h9>Джек</h9>
-    <br><br>
-    <a class = "tag" href = "" target = "_blank"> тег1 </a>
-    <a class = "tag" href = "" target = "_blank"> тег2 </a>
-</div>
-<div class = "News1">
-    <p class = "SmNews">Состояние женщин, пострадавших во время взрыва на сахарном комбинате
-    в Скиделе, тяжелое, рассказал Дмитрий Мазолевский,
-    заведующий ожоговым отделением больницы скорой медицинской помощи.</p>
-    <a  class="OpenNews1" target="_blank" href = "https://news.tut.by/society/533220.html?utm_source=news-right-block&utm_medium=popular-news&utm_campaign=popular-news">Открыть новость</a>
-    <button class="ChangeBt">Редактировать </button>
-    <button class="DeleteBt">Удалить </button>
+
+
+<template id = "templateArticle">
+        <div class="block">
+
+            <div class = "News">
+                <h9 class = "TitleNews"></h9>
+                <div class="Tags-in-News">
+                </div>
+                <br><br><br><h9 class = "Date"></h9>
+                <h9 class = "Author"></h9>
+                <p class = "SmNews"></p>
+                <a  class="OpenNews" target="_blank" href = "">Открыть новость</a>
+                <button class="ChangeBt">Редактировать </button>
+                <button class="DeleteBt">Удалить </button>
+            </div>
+
+
+    </div>
+</template>
+<div class = "posts"style="padding-top: 50px">
 </div>
 
-<div class = "Title-Background2"><br>
-    <h9 class = "TitleNews">До 50%. Где минчанам искать скидки в марте</h9><br>
-    <h9>08.10.1092</h9><br>
-    <h9>Джон</h9>
-    <br><br>
-    <a class = "tag" href = "" target = "_blank"> тег1 </a>
-    <a class = "tag" href = "" target = "_blank"> тег2 </a>
+
+<div class = tryOne>
+    <div class="trytwo">
+
+    </div>
 </div>
-<div class = "News2">
-    <p class = "SmNews">Столичные универмаги и торговые сети в марте продолжат делать скидки. </p>
-    <a class="OpenNews2" href = "https://finance.tut.by/news533292.html" target="_blank" >Открыть новость</a><br>
-    <button class="ChangeBt">Редактировать </button>
-    <button class="DeleteBt">Удалить </button>
-</div>
-<div class = "Title-Background3">
-    <br><h9 class = "TitleNews">В Киеве обрушился мост на Шулявском путепроводе</h9><br>
-    <h9>08.10.1092</h9><br>
-    <h9>Джон</h9>
-    <br><br>
-    <a class = "tag" href = "" target = "_blank"> тег1 </a>
-    <a class = "tag" href = "" target = "_blank"> тег2 </a>
-</div>
-<div class = "News3">
-    <p class = "SmNews">Движение транспорта на Шулявском путепроводе перекрыто.</p>
-    <a href = "https://news.tut.by/accidents/533320.html" target="_blank" class="OpenNews1">Открыть новость</a><br>
-    <button class="ChangeBt">Редактировать </button>
-    <button class="DeleteBt">Удалить </button>
-</div>
+
 <div class="NumberBt">
-    <button class="bt">1</button>
-    <button class="bt">2</button>
-    <a>...</a>
-    <button class="bt">n-1</button>
-    <button class="bt">n</button>
+    <button class="bt">еще</button>
 </div>
 <footer>
     <script src = "inf.js"></script>
