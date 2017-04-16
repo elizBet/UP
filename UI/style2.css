@@ -143,7 +143,6 @@ body{
     border-radius: 30px;
     background: white;
     width:650px;
-    height:300px;
     white-space: pre-line;
     position: relative;
     background: rgba(0,0,0,0);
@@ -156,15 +155,15 @@ body{
     font-size: 25px;
     color: darkblue;
     text-align: center;
-    position: absolute;
+    padding: 10px;
 }
 
 .Date{
-    margin-top: 8%;
-    margin-left: 80%;
     color: orange;
     font-weight: bold;
     font-size: 15px;
+    position: absolute;
+    right:20px;
 }
 
 .Author{
@@ -178,15 +177,14 @@ body{
 .OpenNews{
     color:orange;
     position:absolute;
-    margin-top:8%;
     margin-left:7%;
+    bottom: 60px;
 }
 
 .SmNews{
     font-size: 15px;
-    margin-top:2%;
+    margin-top:10px;
     padding:10px;
-    position:absolute;
     text-align: center;
     color: darkblue;
 }
@@ -194,7 +192,7 @@ body{
 .DeleteBt{
     position: absolute;
     right: 5%;
-    margin-top:10%;
+    bottom: 20px;
     background:rgba(0,0,139,0.1);
     border-color: white;
     border-radius: 30px;
@@ -204,13 +202,12 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-
 }
 
 .ChangeBt{
     position: absolute;
     left: 5%;
-    margin-top: 12%;
+    bottom: 20px;
     background:rgba(0,0,139,0.1);
     border-color: white;
     border-radius: 30px;
@@ -228,9 +225,7 @@ body{
 
 .Tags-in-News{
     white-space: pre-line;
-    position:absolute;
-    left: 80px;
-    margin-top: 8%;
+    padding: 10px;
 }
 
 .NumberBt{
